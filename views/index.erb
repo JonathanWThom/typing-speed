@@ -6,6 +6,9 @@
 
 <form action="/" method="post">
   <input type="hidden" name="word" value="<%= @word %>">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
   <input name="guess">
   <button type="submit">Guess</button>
 </form>
+
+<%= @elapsed %>
