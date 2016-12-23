@@ -15,7 +15,9 @@ get('/guess') do
   if @word == guess
     redirect('/')
   else
-    @result = 'try again!'
     @word = @word
+    @result = 'try again'
+    erb(:index)
+    #this route is ugly, but it works
   end
 end
