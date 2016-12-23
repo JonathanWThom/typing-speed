@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: typing_speed_development
+
+test:
+  adapter: postgresql
+  database: typing_speed_test
