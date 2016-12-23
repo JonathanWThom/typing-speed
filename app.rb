@@ -19,6 +19,8 @@ post('/') do
     @elapsed = Time.now - start_time
     @start_time = Time.now
     @word = Sentence.all.sample.sentence
+    length = @word.split(' ').length
+    @words_per_minute = (60 / @elapsed) * length
     erb(:index)
   else
     @word = @word
