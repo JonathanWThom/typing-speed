@@ -1,0 +1,11 @@
+<%= @word %>
+
+<% if @result %>
+  <%= @result %>
+<% end %>
+
+<form action="/guess">
+  <input type="hidden" name="word" value="<%= @word %>">
+  <input name="guess">
+  <button type="submit">Guess</button>
+</form>

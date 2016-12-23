@@ -14,3 +14,6 @@ eventually can show up red with mistakes
 6) load strings from api
 7) red with mistakes
 8) deploy
+
+
+recursion in app.rb, not in methods?
