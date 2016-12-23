@@ -8,10 +8,14 @@
 <form action="/" method="post">
   <input type="hidden" name="word" value="<%= @word %>">
   <input type="hidden" name="start_time" value="<%= @start_time %>">
-  <input name="guess">
-  <button type="submit">Guess</button>
+  <input name="input">
+  <button type="submit">Input</button>
 </form>
 
+<% if @input %>
+what you wrote: <%= @input %>
+<% end %>
+<br>
 time elapsed: <%= @elapsed %>
 <br>
 words per minute: <%= @words_per_minute %>

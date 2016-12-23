@@ -13,9 +13,9 @@ end
 
 post('/') do
   start_time = Time.parse(params['start_time'])
-  guess = params['guess']
+  input = params['input']
   @word = params['word']
-  if @word == guess
+  if @word == input
     @elapsed = Time.now - start_time
     @start_time = Time.now
     @word = Sentence.all.sample.sentence
@@ -23,6 +23,7 @@ post('/') do
     @words_per_minute = (60 / @elapsed) * length
     erb(:index)
   else
+    @input = input
     @word = @word
     @elapsed = Time.now - start_time
     @start_time = start_time

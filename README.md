@@ -14,7 +14,7 @@ eventually can show up red with mistakes
 <!-- 5) will tell you speed of typing when correct and accumulate on misses -->
 6) words per minute
 7) make page look nice
-8) red with mistakes
+8) red with mistakes?
 
 
 
