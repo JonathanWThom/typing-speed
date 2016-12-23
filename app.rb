@@ -22,6 +22,8 @@ post('/') do
     erb(:index)
   else
     @word = @word
+    @elapsed = Time.now - start_time
+    @start_time = start_time
     @result = 'try again'
     erb(:index)
     #this route is ugly, but it works
