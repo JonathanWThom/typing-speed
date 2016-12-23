@@ -12,12 +12,13 @@ eventually can show up red with mistakes
 4) will load strings from db -->
 * can do these things, just not populated with longer words yet
 <!-- 5) will tell you speed of typing when correct and accumulate on misses -->
-6) words per minute
-7) make page look nice
+<!-- 6) words per minute -->
+7) add new strings to database, delete others
+8) make page look nice
+9)
+
+
 8) red with mistakes?
-
-
-
 other) time running all the time...need javascript/ajax
 other) load strings from api
 other) deploy

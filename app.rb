@@ -31,3 +31,12 @@ post('/') do
     erb(:index)
   end
 end
+
+get('/strings') do
+  erb(:strings)
+end
+
+post('/strings') do
+  Sentence.create(sentence: params['string'])
+  redirect('/')
+end
