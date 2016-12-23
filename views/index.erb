@@ -4,7 +4,7 @@
   <%= @result %>
 <% end %>
 
-<form action="/guess">
+<form action="/" method="post">
   <input type="hidden" name="word" value="<%= @word %>">
   <input name="guess">
   <button type="submit">Guess</button>

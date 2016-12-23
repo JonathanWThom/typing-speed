@@ -9,7 +9,7 @@ get('/') do
   erb(:index)
 end
 
-get('/guess') do
+post('/') do
   guess = params['guess']
   @word = params['word']
   if @word == guess
