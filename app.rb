@@ -26,6 +26,5 @@ post('/') do
     @start_time = start_time
     @result = 'try again'
     erb(:index)
-    #this route is ugly, but it works
   end
 end

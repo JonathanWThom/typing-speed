@@ -5,6 +5,8 @@ gem('sinatra-activerecord')
 gem('rake')
 gem('pg')
 gem('sinatra')
+gem 'dotenv'
+gem 'httparty'
 
 group(:test) do
   gem('rspec')

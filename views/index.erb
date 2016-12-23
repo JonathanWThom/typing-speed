@@ -1,8 +1,9 @@
-<%= @word %>
-
 <% if @result %>
   <%= @result %>
+  <br>
 <% end %>
+
+<%= @word %>
 
 <form action="/" method="post">
   <input type="hidden" name="word" value="<%= @word %>">
