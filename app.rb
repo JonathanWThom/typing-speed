@@ -17,7 +17,9 @@ post('/') do
   @word = params['word']
   if @word == guess
     @elapsed = Time.now - start_time
-    redirect('/')
+    @start_time = Time.now
+    @word = Sentence.all.sample.sentence
+    erb(:index)
   else
     @word = @word
     @result = 'try again'
