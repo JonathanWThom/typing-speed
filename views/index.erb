@@ -1,3 +1,5 @@
+<h5>The clock is running...</h5>
+
 <% if @result %>
   <%= @result %>
   <br>
@@ -9,7 +11,7 @@
   <input type="hidden" name="word" value="<%= @word %>">
   <input type="hidden" name="start_time" value="<%= @start_time %>">
   <input name="input">
-  <button type="submit">Input</button>
+  <button type="submit" class="btn blue accent-4">Input</button>
 </form>
 
 <% if @input %>

@@ -12,8 +12,9 @@ eventually can show up red with mistakes
 4) will load strings from db -->
 <!-- 5) will tell you speed of typing when correct and accumulate on misses -->
 <!-- 6) words per minute -->
-7) add new strings to database, delete others
+7) add new strings to database, delete others - see the full database
 8) make page look nice
+9) down to two decimal places
 
 
 other) red with mistakes?
