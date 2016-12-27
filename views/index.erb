@@ -7,19 +7,36 @@
 
 <%= @word %>
 
-<form action="/" method="post">
-  <input type="hidden" name="word" value="<%= @word %>">
-  <input type="hidden" name="start_time" value="<%= @start_time %>">
-  <input name="input">
-  <button type="submit" class="btn blue accent-4">Input</button>
-</form>
+<div class="row">
+  <div class="input-field col s6">
+    <form action="/" method="post">
+      <input type="hidden" name="word" value="<%= @word %>">
+      <input type="hidden" name="start_time" value="<%= @start_time %>">
+      <input name="input">
+      <!-- <textarea name="input" id="textarea1" class="materialize-textarea"></textarea> -->
+      <button type="submit" class="btn blue accent-4">Input</button>
+    </form>
+  </div>
+</div>
 
-<% if @input %>
-what you wrote: <%= @input %>
-<% end %>
-<br>
-time elapsed: <%= @elapsed %>
-<br>
-words per minute: <%= @words_per_minute %>
+<div class="card-panel blue-grey darken-1">
+  <div class="card-content black-text">
+    <% if @input %>
+    <span class="card-title">what you wrote:</span>
+      <%= @input %>
+    <% end %>
+  </div>
+</div>
+<div class="card-panel blue-grey darken-1">
+  <div class="card-content black-text">
+    <span class="card-title">Time Elapsed:</span>
+  </div>
+  <div class="card-action">
+    <%= @elapsed %>
+  </div>
+</div>
+  <br>
+  words per minute: <%= @words_per_minute %>
+
 <br>
 <a href='/strings'>Add a new string</a>
