@@ -27,7 +27,7 @@ post('/') do
     @word = @word
     @elapsed = (Time.now - start_time).round(2)
     @start_time = start_time
-    @result = 'try again'
+    @result = "\"#{@input}\"" + ' is incorrect, try again!'
     erb(:index)
   end
 end
