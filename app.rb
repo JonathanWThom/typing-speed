@@ -16,16 +16,16 @@ post('/') do
   input = params['input']
   @word = params['word']
   if @word == input
-    @elapsed = Time.now - start_time
+    @elapsed = (Time.now - start_time).round(2)
     @start_time = Time.now
     @word = Sentence.all.sample.sentence
     length = @word.split(' ').length
-    @words_per_minute = (60 / @elapsed) * length
+    @words_per_minute = ((60 / @elapsed) * length).round(2)
     erb(:index)
   else
     @input = input
     @word = @word
-    @elapsed = Time.now - start_time
+    @elapsed = (Time.now - start_time).round(2)
     @start_time = start_time
     @result = 'try again'
     erb(:index)
